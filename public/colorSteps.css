@@ -1,0 +1,191 @@
+
+body{
+	color: hsl(192, 100%, 9%);
+	font-size: 18px;
+	overflow-x:hidden;
+	font-family: "Arial Rounded MT";
+	
+}
+.description{
+	
+	margin-top: 15px;
+	margin-bottom:10px;
+}
+
+
+
+.btn-primary{
+	border: none;
+	border-radius: 50px;
+	color: white;
+	background-color: #f9896e; /*rose saumon*/
+	min-width: 90px;
+	min-height: 45px;
+
+ }
+ .btn-primary:hover{
+ 	background-color:rgba(248, 175, 58, 0.1);
+ 	color: #f8af3c;
+ 	border:1px solid #f8af3c;
+ }
+
+ .btn-secondary{
+	color: #2f8c91;
+	border-radius: 50px;
+	margin-right: 16px;
+	background-color: transparent;
+	/*border:  3px solid #2f8c91;*/
+	border: none;
+	font-size: 1.1em!important;
+	min-width: 90px;
+    min-height: 45px;
+    padding-left: 16px;
+    padding-right: 16px;
+ }
+
+
+ h1, .title {
+ 	font-weight: 700;
+ 	color: hsl(192, 100%, 9%);
+ 	font-size: 3.5em;
+ }
+
+ .leftSided{
+ 	margin-left: -100px;
+ 	height: 60px;
+ 	width: auto;
+ }
+
+
+ section .container-fluid{
+ 	padding-left: 0;
+ 	padding-right: 0;
+ 	margin: 0;
+ }
+
+ .imgSection{
+ 	
+ 	padding-left: 0;
+ 	padding-right: 0;
+ 	margin: 0;
+ }
+
+
+.bg-white{
+	margin: 100px 0 100px 0;
+}
+
+footer{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #2f8c91 !important;
+	max-height: 200px;
+}
+footer img{
+	max-width:195px; 
+	margin-bottom: 20px;
+	
+}
+.icons{
+	width: 20px;
+	margin-right: 16px;
+
+}
+.iconsContainer{
+	margin-top: 25px;
+}
+footer h4{
+	font-weight: 600;
+}
+
+.iconsLogo{
+	width: 30px;
+	margin: 8px;
+}
+nav{
+	padding: 20px;
+}
+
+.btn-lg{
+	min-height:60px;
+	margin: 20px 0 50px 0;
+	box-shadow: 0 0 28px #bbb;
+	padding:18px;
+}
+
+
+#brand{
+	color: rgb(35,43,83);
+}
+
+.advantages{
+	padding-top: 65px;
+	padding-bottom: 50px;
+}
+.advantages img{
+	margin-bottom: 16px;
+}
+
+#googlePlay-btn{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 0;
+	max-width: 50%;
+}
+
+.btn{
+	color: white;
+	background-color: #f9896e;/*rose saumon*/
+	border: none;
+}
+.navbar-brand span{
+	font-size: 1.2em;
+	font-weight: 500;
+	color:#000;
+}
+
+
+
+
+.nav-link{
+	margin-right: 16px;
+	
+}
+.navbar-nav{
+	margin-right:20px;
+	padding-left: 10px;
+}
+
+
+
+.socialMedia img{
+	max-height: 50px;
+	max-width: 50px;
+	margin: 8px;
+}
+
+.socialMedia img:hover{
+	opacity: 0.4;
+}
+
+#chef-img{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#bristol{
+	color: #f8af3c;
+}
+
+#contact{
+	font-size: larger;
+	font-weight: 700!important;
+	color: black;
+	opacity: 0.6;
+}
+
+.quote{
+	opacity: 0.5;
+	font-weight: lighter;
+}

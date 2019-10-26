@@ -1,0 +1,23 @@
+<% include layout\header%>
+<form action="/challenges" method="POST">
+
+    <section>
+            <input type="text" name = "challenge[name]" placeholder="Challenge name">
+            <input type="text" name = "challenge[challengeType]" placeholder="challenge type">
+            <input type="text" name = "challenge[level]" placeholder="level">
+            <input type="text" name = "challenge[space]" placeholder="space">
+            <input type="number" name = "challenge[time]" placeholder="time in minutes">
+            <input type="text" name = "challenge[purpose]" placeholder="purpose">
+            <input type="number" name = "challenge[teamSize]" placeholder="size of the team">
+            <input type="text" name = "challenge[needs]" placeholder="Challenge needs">
+    </section>
+    <section>
+            <label>instructions</label>
+            <input type="text"  placeholder="instruction 1">
+
+    </section>
+   
+    <button class="ui blue basic button">Create</button>
+</form>
+
+<% include layout\footer%>

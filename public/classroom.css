@@ -1,0 +1,88 @@
+body{
+	background-color: #F8f9fa;
+}
+#caracteristicsPlayer1{
+	border-bottom-left-radius:32px;
+	border-bottom-right-radius:32px;
+	background-color: #2f8c91;
+    padding: 16px 8px 8px 8px;
+	color: white;
+}
+
+.imageContainer{
+	margin-bottom: 24px;
+	padding: 8px;
+
+} 
+.category-txt{
+	color: #EC9B3B;
+	font-size:0.8em;
+}
+.number{
+	font-size: 1em;
+
+}
+.playerImg{
+	min-width: 90%;
+	height: auto;
+    
+}
+.descriptionContainer{
+	    margin-bottom: 32px;
+	    padding: 8px;	
+}
+
+.caracteristicsContainer{
+	margin: 0;
+}
+.playerCard{
+	background-color:#fff;
+	min-width: ;
+	/*margin: 50px 50px 50px 50px;*/
+	border-radius: 35px;
+	padding: 0;
+	border: 1px solid rgba(61, 71, 117,0.2);
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+
+a {
+	font-style: none;
+}
+
+#listeChallenges{
+	margin: 64px 64px auto 64px;
+}
+
+
+#pagination{
+	margin-top: 46px;
+}
+
+.page-item.active .page-link {
+	background-color: #f9896e;
+	border-color: #f9896e;
+}
+
+a.page-link{
+	color:#97c9ce;
+}
+
+#search-bar{
+	width: 70%;
+
+}
+
+.close{
+	margin-right: 16px;
+	margin-top: 16px; 
+}
+#demo{
+	font-size:2.1em;
+	margin-top: 8px;
+	margin-bottom: -16px;
+	color : #2f8c91;
+}

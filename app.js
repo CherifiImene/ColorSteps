@@ -17,6 +17,10 @@ let Challenge = require("./modules/challenge");
 
 
 //RESTful routes
+
+app.get("/",function(req , res){
+    res.render("colorSteps");
+})
 /* INDEX */
 app.get("/challenges", function(req, res){
 
@@ -24,36 +28,61 @@ app.get("/challenges", function(req, res){
         if(err){
             console.log(err);
         }else{
-            res.render('index',{challenges : challenges});
+            res.render('classroom',{challenges : challenges});
         }
-    })
+    });
 });
 
 /*NEW */
 app.get("/challenges/new",function(req , res){
-    //res.render('new');
-    res.send("Create new challenges!");
+    res.render("newChallenge");
 });
 /*CREATE */
 app.post("/challenges",function(req , res){
-    res.send("Show new challenges!");
+    Challenge.create(req.body.challenge,function(err , challenge){
+        if(err){
+            res.render("/newChallenge");
+        }else{
+            res.redirect("/challeneges");
+        }
+    });
     
 });
 
 /*SHOW */
 app.get("/challenges/:id",function(req , res){
-    res.send("Show specific challenge!");
+    Challenge.findById(req.params.id,function(err , challenge){
+
+    if(err){
+        res.redirect("/challenges");
+    }else{
+        res.render("showChallenge",{challenge : challenge});
+    }
+    });
     
 });
 
 /* EDIT */
 app.get("/challenges/:id/edit",function(req , res){
-    res.send("Edit specific challenge!");
+    Challenge.findById(req.blog.id,function(err , challenge){
+        if(err){
+            res.redirect("/challenges/"+challenge._id);
+        }else{
+            res.render("editChallenge",{challenge : challenge});
+        }
+    })
 });
 
 /*UPDATE */
 app.put("/challenges/:id",function(req , res){
-    res.send("Update specific challenge!");
+    Challenge.findByIdAndUpdate(req.params.id,function(err , challenge){
+        if(err){
+            res.redirect("/challenges");
+        }else{
+            res.render("showChallenge",{challenge : challenge});
+        }
+
+    });
 
 });
 

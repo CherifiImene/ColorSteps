@@ -1,0 +1,15 @@
+<% include layout\header%>
+<form action="/challenges/<%=challenge._id%>?_method=PUT" method="POST">
+
+    <input type="text" name = "challenge[name]" value = "<%=challenge.name%>">
+    <input type="text" name = "challenge[challengeType]" value = "<%=challenge.challengType%>">
+    <input type="text" name = "challenge[level]" value = "<%=challenge.level%>">
+    <input type="text" name = "challenge[space]" value = "<%=challenge.space%>">
+    <input type="number" name = "challenge[time]" value = "<%=challenge.time%>">
+    <input type="text" name = "challenge[purpose]" value = "<%=challenge.purpose%>">
+    <input type="number" name = "challenge[teamSize]" value = "<%=challenge.teamSize%>">
+    <input type="text" name = "challenge[needs]" value = "<%=challenge.needs%>">
+    <button class="ui blue basic button">Apply changes</button>
+</form>
+
+<% include layout\footer%>

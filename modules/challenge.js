@@ -3,10 +3,15 @@ mongoose.connect("mongodb://localhost/color_steps",{useNewUrlParser: true,useUni
 
 let challengeSchema = mongoose.Schema({
     name : String,
-    question: String,
-    image : {type: String , default : null},
-    possibilities: [String],
-    answer: String
+    challengeType: String,
+    level : String,
+    space : String,
+    time : Number,
+    purpose : String,
+    teamSize : Number,
+    needs : String,
+    instructions: [String],
+    completed : {type: Boolean , default: false}
 });
 
 module.exports = mongoose.model("Challenge",challengeSchema);
